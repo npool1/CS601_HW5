@@ -12,4 +12,19 @@ async function getDegrees(url) {
     // );
 }
 
-getDegrees("./src/degrees.json");
+async function fetchDegrees(url) {
+  const response = await fetch(url);
+  if (!response.ok) {
+    const message = `An error has occured: ${response.status}`;
+    throw new Error(message);
+  }
+  const degrees = await response.json();
+  return degrees;
+}
+
+fetchDegrees().catch(error => {
+  error.message; // 'An error has occurred: 404'
+});
+
+fetchDegrees("./src/degres.json");
+//getDegrees("./src/degrees.json");
