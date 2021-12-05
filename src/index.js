@@ -9,7 +9,7 @@ async function fetchDegrees(url) {
     document.write(
       `My ${degree.degree.Type} degree is from ${degree.degree.School}`
     )
-  }
+  })
 }
 
 fetchDegrees("./src/degrees.json").catch(error => {
