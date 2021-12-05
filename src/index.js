@@ -15,8 +15,4 @@ async function fetchDegrees(url) {
 fetchDegrees("./src/degrees.json").catch(error => {
   document.write(`${error.message}`) // 'An error has occurred: 404'
 });
-degrees.forEach(degree => {
-  for (let key in degree) {
-    console.log(`${key}: ${degree[key]}`);
-  }
-});
+
