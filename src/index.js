@@ -5,7 +5,8 @@ async function getDegrees(url) {
     .then((response) => response.json())
     .then((data) =>
       document.write(
-        `My first degree was a ${data.data[0].degrees.bachelors.data.type} from ${data.data[0].degrees.bachelors.data.institution} in ${data.data[0].degrees.bachelors.data.date}`
+        // `My first degree was a ${data.data[0].degrees.bachelors.data.type} from ${data.data[0].degrees.bachelors.data.institution} in ${data.data[0].degrees.bachelors.data.date}`
+        " hello ${college_degrees_earned.degree[0].school}"
       )
     );
 }
