@@ -5,9 +5,9 @@ async function fetchDegrees(url) {
     throw new Error(message);
   }
   const degrees = await response.json();
-  for(var degree in degrees.college_degrees_earned){
+  degrees.forEach(degree => {
     document.write(
-      `My ${degree.Type} degree is from ${degree.School}`
+      `My ${degree.degree.Type} degree is from ${degree.degree.School}`
     )
   }
 }
@@ -15,4 +15,8 @@ async function fetchDegrees(url) {
 fetchDegrees("./src/degrees.json").catch(error => {
   document.write(`${error.message}`) // 'An error has occurred: 404'
 });
-
+degrees.forEach(degree => {
+  for (let key in degree) {
+    console.log(`${key}: ${degree[key]}`);
+  }
+});
