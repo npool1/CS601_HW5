@@ -2,6 +2,10 @@ async function getDegrees(url) {
   // fetch the url
   const response = await fetch(url)
   console.log(response.json())
+  if (!response.ok) {
+    const message = `An error has occured: ${response.status}`;
+    throw new Error(message);
+  }
     //get your data here, and check for the response status. If it's not 200, throw an error
     .then((response) => response.json())
     .then((college_degrees_earned) =>
