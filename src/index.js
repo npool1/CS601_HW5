@@ -10,7 +10,7 @@ async function fetchDegrees(url) {
   )
 }
 
-fetchDegrees("./src/degres.json").catch(error => {
+fetchDegrees("./src/degrees.json").catch(error => {
   document.write(`${error.message}`) // 'An error has occurred: 404'
 });
 
