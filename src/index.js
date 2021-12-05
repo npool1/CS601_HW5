@@ -16,4 +16,4 @@ async function getDegrees(url) {
     );
 }
 
-getDegrees("./src/degrees.json");
+getDegrees("./src/degree.json");
