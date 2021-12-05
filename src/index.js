@@ -5,7 +5,7 @@ async function fetchDegrees(url) {
     throw new Error(message);
   }
   const degrees = await response.json();
-  for(degree in degrees.college_degrees_earned[0]){
+  for(var degree in degrees.college_degrees_earned){
     document.write(
       `My ${degree.Type} degree is from ${degree.School}`
     )
