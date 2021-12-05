@@ -1,0 +1,27 @@
+{
+	"college_degrees_earned": [{
+			"degree": {
+				"School": "Kansas State University",
+				"Program/Major": "Music Education",
+				"Type": "BME",
+				"Year conferred": "2008"
+			}
+		},
+		{
+			"degree": {
+				"School": "University of North Carolina at Greensboro",
+				"Program/Major": "Saxophone Performance",
+				"Type": "MM",
+				"Year conferred": "2011"
+			}
+		},
+		{
+			"degree": {
+				"School": "Boston University Metropolitan College",
+				"Program/Major": "Software Development",
+				"Type": "MS",
+				"Year conferred": "2022"
+			}
+		}
+	]
+}
