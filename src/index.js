@@ -7,12 +7,14 @@ async function fetchDegrees(url) {
   const degrees = await response.json();
   degrees.college_degrees_earned.forEach(degree => {
     document.write(
-      `My ${degree.degree.Type} degree is from ${degree.degree.School}<br>`
+      `My ${degree.degree.Type} degree is from ${degree.degree.School}`
     )
   })
 }
 
-fetchDegrees("./src/degrees.json").catch(error => {
-  document.write(`${error.message}`) // 'An error has occurred: 404'
-});
+function ifClicked(){
+  fetchDegrees("./src/degrees.json").catch(error => {
+    document.write(`${error.message}`) // 'An error has occurred: 404'
+  });
+}
 
