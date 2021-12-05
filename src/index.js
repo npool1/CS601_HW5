@@ -22,7 +22,7 @@ async function fetchDegrees(url) {
   return degrees;
 }
 
-fetchDegrees().catch(error => {
+fetchDegrees(url).catch(error => {
   error.message; // 'An error has occurred: 404'
 });
 
